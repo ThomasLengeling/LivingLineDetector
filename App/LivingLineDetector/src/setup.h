@@ -327,7 +327,7 @@ void ofApp::setupCam() {
       for (auto & cam : camjs) {
         std::string inputImg("cam_" + to_string(j));
         int camId =  cam[inputImg]["camId"];
-        ofLog(OF_LOG_NOTICE)<<"Loading: " << j << ": CamId: " << camId;
+        ofLog(OF_LOG_NOTICE)<<"Loading: " << j << ": CamId: " << camId<<" "<<std::endl;
 
 
         mGridImg.at(j)->setCropUp(glm::vec2(cam[inputImg]["x1"], cam[inputImg]["y1"]));
