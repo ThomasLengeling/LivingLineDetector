@@ -30,6 +30,7 @@ typedef std::shared_ptr<GridImage> GridImageRef;
 class GridImage{
 public:
     GridImage(glm::vec2 dims);
+    ~GridImage();
 
     static GridImageRef create(glm::vec2 dims) {
         return std::make_shared<GridImage>(dims);

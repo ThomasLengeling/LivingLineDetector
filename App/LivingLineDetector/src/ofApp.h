@@ -39,8 +39,8 @@ Living Line
 
 #define NUM_CAM_INPUTS 2
 
-#define CAM_WIDTH  1920  //1920
-#define CAM_HEIGHT 1080 //1080
+#define CAM_WIDTH  1280  //1920
+#define CAM_HEIGHT 720 //1080
 
 #define CAM_FRAMERATE 10 //10
 
@@ -51,6 +51,7 @@ public:
   void setup();
   void update();
   void draw();
+  void exit();
 
   void keyPressed(int key);
   void keyReleased(int key);

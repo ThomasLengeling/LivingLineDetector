@@ -25,8 +25,8 @@ void QRDetector::setupCalibration(int markersX, int markersY) {
 
   detectorParams = cv::aruco::DetectorParameters::create();
 
-  detectorParams->adaptiveThreshWinSizeMin = 220;
-  detectorParams->adaptiveThreshWinSizeMax = 250;
+  detectorParams->adaptiveThreshWinSizeMin = 20;
+  detectorParams->adaptiveThreshWinSizeMax = 50;
   detectorParams->adaptiveThreshWinSizeStep = 5;
 
   detectorParams->perspectiveRemovePixelPerCell = 10; // 10

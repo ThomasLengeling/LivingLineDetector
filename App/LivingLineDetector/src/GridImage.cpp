@@ -3,6 +3,12 @@
 using namespace std;
 using namespace cv;
 
+
+GridImage::~GridImage(){
+  mCam.close();
+  cout<<"cam closed "<<mId<<std::endl;
+}
+//----------------------------------------
 GridImage::GridImage(glm::vec2 dims) {
   mDim = dims;
   mLength = glm::vec2(0, 0);
@@ -27,15 +33,16 @@ GridImage::GridImage(glm::vec2 dims) {
 void GridImage::setupCam(int id, int fps) {
   mCamId = id;
   mFps = fps;
+
   mCam.setDeviceID(mCamId);
-  // mCam.setVerbose(true);
+  mCam.setVerbose(true);
   mCam.setDesiredFrameRate(mFps);
   mCam.initGrabber(mDim.x, mDim.y);
   mCam.setUseTexture(true);
 
   ofLog(OF_LOG_NOTICE) << "loaded Cam: " << mCamId << " " << mId << " "
                        << mDim.x << " " << mDim.y << "  " << mCam.getWidth()
-                       << " " << mCam.getHeight();
+                       << " " << mCam.getHeight()<<" fps: "<<mFps<<std::endl;
 }
 //-----------------------------------------------------------------------------
 void GridImage::setupGUISwap(float x, float y) {
