@@ -20,7 +20,7 @@ void ofApp::setupValues() {
 
   //load imputs for #cameras
 
-  if(mNumInputs > 1){
+  if(mNumInputs >= 1){
     ofLog(OF_LOG_NOTICE) << "Reading Cam Definition griddef.json";
     ofFile file("griddef.json");
     if (file.exists()) {
@@ -289,7 +289,7 @@ void ofApp::setupCam() {
   ofVideoGrabber mVideoGrabber;
   mVideoGrabber.listDevices();
 
-  if(mNumInputs > 1){
+  if(mNumInputs >= 1){
     ofLog(OF_LOG_NOTICE) << "Loading cam and crop positions "<<mGridImg.size();
     ofFile file("img.json");
     bool foundFile = false;
@@ -298,23 +298,25 @@ void ofApp::setupCam() {
       file >> camjs;
       int j = 0;
       for (auto & cam : camjs) {
-        std::string inputImg("cam_" + to_string(j));
-        int camId =  cam[inputImg]["camId"];
-        ofLog(OF_LOG_NOTICE)<<"Loading: " << j << ": CamId: " << camId<<" "<<std::endl;
+        if(j < mNumInputs){
+          std::string inputImg("cam_" + to_string(j));
+          int camId =  cam[inputImg]["camId"];
+          ofLog(OF_LOG_NOTICE)<<"Loading: " << j << ": CamId: " << camId<<" "<<std::endl;
 
 
-        mGridImg.at(j)->setCropUp(glm::vec2(cam[inputImg]["x1"], cam[inputImg]["y1"]));
-        mGridImg.at(j)->setCropDown(glm::vec2(cam[inputImg]["x2"], cam[inputImg]["y2"]));
-        mGridImg.at(j)->setCropDisp(glm::vec2(cam[inputImg]["disX"], cam[inputImg]["disY"]));
+          mGridImg.at(j)->setCropUp(glm::vec2(cam[inputImg]["x1"], cam[inputImg]["y1"]));
+          mGridImg.at(j)->setCropDown(glm::vec2(cam[inputImg]["x2"], cam[inputImg]["y2"]));
+          mGridImg.at(j)->setCropDisp(glm::vec2(cam[inputImg]["disX"], cam[inputImg]["disY"]));
 
-        float gm = float(cam[inputImg]["gamma"]);
-        mGridImg.at(j)->setGamma(gm);
+          float gm = float(cam[inputImg]["gamma"]);
+          mGridImg.at(j)->setGamma(gm);
 
-        ofLog(OF_LOG_NOTICE) << "Loading cam devices:";
-        mGridImg.at(j)->setupCam(camId, CAM_FRAMERATE);
+          ofLog(OF_LOG_NOTICE) << "Loading cam devices:";
+          mGridImg.at(j)->setupCam(camId, CAM_FRAMERATE);
 
-        ofLog(OF_LOG_NOTICE) << "Gamma: " << gm;
-        j++;
+          ofLog(OF_LOG_NOTICE) << "Gamma: " << gm;
+          j++;
+        }
       }
       ofLog(OF_LOG_NOTICE) << "Done crop values JSON";
       foundFile = true;
