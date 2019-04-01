@@ -19,11 +19,13 @@ GridDetector::GridDetector(glm::vec2 dim) {
   mNumOS = 0;
   mNumPark = 0;
 }
+
 //-----------------------------------------------------------------------------
 void GridDetector::setMaxMarkers(int max) {
   mMaxMarkers = max;
   ofLog(OF_LOG_NOTICE) << "Max Markers: " << mMaxMarkers;
 }
+
 //-----------------------------------------------------------------------------
 void GridDetector::setId(int id) { mId = id; }
 
@@ -90,6 +92,7 @@ void GridDetector::setupCleaner() {
 
   ofLog(OF_LOG_NOTICE) << "setup clean";
 }
+
 //-----------------------------------------------------------------------------
 void GridDetector::setupGridJsonPos(std::string filePos) {
   ofLog(OF_LOG_NOTICE) << "Loading gridpos json: " << filePos;

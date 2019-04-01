@@ -30,7 +30,6 @@ Living Line
 
 #include "CommonTypes.h"
 #include "QRDetector.h"
-#include "KnobAruco.h"
 #include "MarkerAruco.h"
 #include "gui.h"
 #include "GridImage.h"
@@ -39,10 +38,10 @@ Living Line
 
 #define NUM_CAM_INPUTS 2
 
-#define CAM_WIDTH  1280  //1920
-#define CAM_HEIGHT 720 //1080
+#define CAM_WIDTH  1920  //1920
+#define CAM_HEIGHT 1080 //1080
 
-#define CAM_FRAMERATE 10 //10
+#define CAM_FRAMERATE 30 //10
 
 
 class ofApp : public ofBaseApp {
@@ -103,9 +102,6 @@ public:
   //setup cameras for input detectors
   void setupCam();
 
-  //setup Knob information for GUI
-  void  setupKnob();
-
   //setup markers detector
   void   setupGridDetector();
 
@@ -131,9 +127,6 @@ public:
   ofxDatMatrixRef mBGridSelect;
   ofxDatButtonRef mBCloseCams;
 
-  // knob
-  KnobArucoRef mKnobAmenitie;
-  bool mEnableKnob;
 
 
   // 4 camera render

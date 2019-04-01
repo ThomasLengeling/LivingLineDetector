@@ -25,7 +25,6 @@ Living Line
 #include "QRBlock.h"
 #include "CommonTypes.h"
 #include "QRDetector.h"
-#include "KnobAruco.h"
 #include "MarkerAruco.h"
 #include "GridImage.h"
 
@@ -81,7 +80,6 @@ public:
     void cleanGrid();
     bool isDoneCleaner(){return mCleanDone;}
 
-
     void setGridPos(glm::vec2 mousePos);
 
     //save json files
@@ -135,7 +133,6 @@ private:
     bool mUpdateGrid;
     int mCurrentGridId;
 
-
     bool mRecordOnce;
 
     //clearner
@@ -173,6 +170,5 @@ private:
     std::vector<QRBlockRef> mBlocks;
     std::vector<int> mTagsIds;
     std::vector<int> mFullIds;
-
 
 };

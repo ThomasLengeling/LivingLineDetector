@@ -4,11 +4,13 @@ using namespace std;
 using namespace cv;
 
 
+//----------------------------------------------------------------------------
 GridImage::~GridImage(){
   mCam.close();
   cout<<"cam closed "<<mId<<std::endl;
 }
-//----------------------------------------
+
+//----------------------------------------------------------------------------
 GridImage::GridImage(glm::vec2 dims) {
   mDim = dims;
   mLength = glm::vec2(0, 0);
@@ -29,6 +31,7 @@ GridImage::GridImage(glm::vec2 dims) {
   ofClear(0, 0, 0, 255);
   mFboResolution.end();
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::setupCam(int id, int fps) {
   mCamId = id;
@@ -44,6 +47,7 @@ void GridImage::setupCam(int id, int fps) {
                        << mDim.x << " " << mDim.y << "  " << mCam.getWidth()
                        << " " << mCam.getHeight()<<" fps: "<<mFps<<std::endl;
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::setupGUISwap(float x, float y) {
   mSwapCamId = ofxDatMatrix::create();
@@ -63,6 +67,7 @@ void GridImage::setupGUISwap(float x, float y) {
     mCam.initGrabber(mDim.x, mDim.y);
   });
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::setupVideo(std::string name) {
   // mVideoName = name;
@@ -71,6 +76,7 @@ void GridImage::setupVideo(std::string name) {
 
   ofLog(OF_LOG_NOTICE) << "loaded Video: " << mVideoName << " " << mId;
 }
+
 //-----------------------------------------------------------------------------
 bool GridImage::updateImage() {
   bool newFrame = false;
@@ -89,15 +95,23 @@ bool GridImage::updateImage() {
   }
   return newFrame;
 }
+
 //-----------------------------------------------------------------------------
 ofPixels &GridImage::getImgPixels() {
   // return (mActivateCam) ? mCam.getPixels() : mVideoInput.getPixels();
   return mCam.getPixels();
 }
+
 //-----------------------------------------------------------------------------
-void GridImage::setCropUp(glm::vec2 up) { mCornerUp = up; }
+void GridImage::setCropUp(glm::vec2 up) {
+  mCornerUp = up;
+}
+
 //-----------------------------------------------------------------------------
-void GridImage::setCropDown(glm::vec2 down) { mCornerDown = down; }
+void GridImage::setCropDown(glm::vec2 down) {
+  mCornerDown = down;
+}
+
 //-----------------------------------------------------------------------------
 void GridImage::drawImage(int x, int y, int w, int h) {
   if (mActivateCam) {
@@ -106,6 +120,7 @@ void GridImage::drawImage(int x, int y, int w, int h) {
     mVideoInput.draw(x, y, w, h);
   }
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::drawImage(int x, int y) {
   if (mActivateCam) {
@@ -114,16 +129,19 @@ void GridImage::drawImage(int x, int y) {
     mVideoInput.draw(x, y, mDim.x, mDim.y);
   }
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::drawGUISwap() {
   // draw GUI
   mSwapCamId->draw();
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::updateGUISwap() {
   // update GUI
   mSwapCamId->update();
 }
+
 //-----------------------------------------------------------------------------
 void GridImage::adjustGamma(cv::Mat &img) {
   if (!img.empty()) {
@@ -135,10 +153,13 @@ void GridImage::adjustGamma(cv::Mat &img) {
     cv::LUT(img, lookUpTable, img);
   }
 }
+//-----------------------------------------------------------------------------
 void GridImage::resetCrop() {
+
   mCornerUp = glm::vec2(100, 100);
   mCornerDown = glm::vec2(300, 300);
   mDisp = glm::vec2(5, 5);
+
 }
 //-----------------------------------------------------------------------------
 void GridImage::cropImg(cv::Mat &inputVideo) {
@@ -172,6 +193,7 @@ void GridImage::drawCropRoi() {
   } else {
     ofSetColor(0, 220, 195, 155);
   }
+
   ofBeginShape();
   ofVertex(mCornerUp);
   ofVertex(glm::vec2(mCornerDown.x, mCornerUp.y));
@@ -197,6 +219,16 @@ void GridImage::drawCropImg() {
 }
 
 //-----------------------------------------------------------------------------
+void GridImage::updateCorners(){
+
+  //update corners
+  //mInputQuad[0]
+  //mInputQuad[1]
+  //mInputQuad[2]
+  //mInputQuad[3]
+}
+
+//
 void GridImage::calculatePerspective(){
 
   //mCropMat
@@ -220,5 +252,7 @@ void GridImage::calculatePerspective(){
    lambda = getPerspectiveTransform( inputQuad, outputQuad );
 
    // Apply the Perspective Transform just found to the src image
-   warpPerspective(mCropMat, mPerspectiveMat, lambda, mPerspectiveMat.size() );
+   warpPerspective(mCropMat, mPerspectiveMat, lambda, mPerspectiveMat.size());
+
+   //
 }

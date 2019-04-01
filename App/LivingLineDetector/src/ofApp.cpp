@@ -21,7 +21,6 @@ void ofApp::setup() {
   setupVideo();
   setupCam();
   setupConnection();
-  setupKnob();
   setupGUI();
 
   ofLog(OF_LOG_NOTICE) << "finished setup";
@@ -360,12 +359,6 @@ void ofApp::draw() {
   for (auto gridDetector : mGridDetector) {
     gridDetector->drawRotation();
   }
-
-  //draw knobs
-  if (mEnableKnob) {
-    mKnobAmenitie->drawArc();
-    mKnobAmenitie->draw();
-  }
   // record grid
   recordGrid();
 
@@ -491,24 +484,17 @@ void ofApp::drawGUI() {
 void ofApp::saveJSONBlocks() {
 
   int i = 0;
+  /*
   if (mEnableKnob) {
-    {
       ofJson pt;
       pt[to_string(i)]["posx"] = mKnobAmenitie->getStaticPos().x;
       pt[to_string(i)]["posy"] = mKnobAmenitie->getStaticPos().y;
       pt[to_string(i)]["type"] = BlockType::knobStatic;
       // writer.push_back(pt);
       i++;
-    }
-
-    {
-      ofJson pt;
-      pt[to_string(i)]["posx"] = mKnobAmenitie->getDynamicPos().x;
-      pt[to_string(i)]["posy"] = mKnobAmenitie->getDynamicPos().y;
-      pt[to_string(i)]["type"] = BlockType::knobDynamic;
-      // writer.push_back(pt);
-    }
+  
   }
+  */
 }
 
 //--------------------------------------------------------------
@@ -612,24 +598,6 @@ void ofApp::mouseDragged(int x, int y, int button) {
     mGridDetector.at(mCurrentInputIdx)->setGridPos(glm::vec2(x, y));
   }
 
-  // Physical GUI
-  //move center points for the GUI
-  {
-    if (mEnableKnob) {
-      glm::vec2 posStatic = mKnobAmenitie->getStaticPos();
-      float distStatic = ofDist(posStatic.x, posStatic.y, x, y);
-      if (distStatic >= 0.0 && distStatic <= 15) {
-        mKnobAmenitie->setStaticPos(glm::vec2(x, y));
-      }
-
-      glm::vec2 posDynamic = mKnobAmenitie->getDynamicPos();
-      float distDynamic = ofDist(posDynamic.x, posDynamic.y, x, y);
-      if (distDynamic >= 0.0 && distDynamic <= 15) {
-        mKnobAmenitie->setDynamicPos(glm::vec2(x, y));
-      }
-    }
-  }
-
   //crop input camera information
   if (mBEnableCrop->isActive()) {
     {
@@ -655,19 +623,7 @@ void ofApp::mousePressed(int x, int y, int button) {}
 void ofApp::mouseReleased(int x, int y, int button) {
   //move center points for the GUI
   {
-    if (mEnableKnob) {
-      glm::vec2 posStatic = mKnobAmenitie->getStaticPos();
-      float distStatic = ofDist(posStatic.x, posStatic.y, x, y);
-      if (distStatic >= 0.0 && distStatic <= 15) {
-        mKnobAmenitie->setStaticPos(glm::vec2(x, y));
-      }
 
-      glm::vec2 posDynamic = mKnobAmenitie->getDynamicPos();
-      float distDynamic = ofDist(posDynamic.x, posDynamic.y, x, y);
-      if (distDynamic >= 0.0 && distDynamic <= 15) {
-        mKnobAmenitie->setDynamicPos(glm::vec2(x, y));
-      }
-    }
   }
 
 }

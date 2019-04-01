@@ -17,7 +17,7 @@ void QRDetector::resetMinMax() {
 void QRDetector::setupCalibration(int markersX, int markersY) {
   float markerLength     = 0.0162;     // 0.0165
   float markerSeparation = 0.0042; // 0045
-  int dictionaryId       = QR_6x6_1000; //11
+  int dictionaryId       = cv::aruco::DICT_4X4_50; //0
   std::string outputFile = "./cal.txt";
 
   int calibrationFlags = 0;
@@ -25,8 +25,8 @@ void QRDetector::setupCalibration(int markersX, int markersY) {
 
   detectorParams = cv::aruco::DetectorParameters::create();
 
-  detectorParams->adaptiveThreshWinSizeMin = 20;
-  detectorParams->adaptiveThreshWinSizeMax = 50;
+  detectorParams->adaptiveThreshWinSizeMin = 15; //20
+  detectorParams->adaptiveThreshWinSizeMax = 60; //50
   detectorParams->adaptiveThreshWinSizeStep = 5;
 
   detectorParams->perspectiveRemovePixelPerCell = 10; // 10

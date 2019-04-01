@@ -92,9 +92,12 @@ public:
 
     ofTexture & getFboTexture(){return mFboResolution.getTexture();}
 
+    //Perspective Transform
     void calculatePerspective();
 
-    //Perspective Transform
+    //get cornes for transformation
+    void updateCorners();
+
 
 private:
     //input stream
@@ -128,6 +131,9 @@ private:
     glm::vec2 mCornerUp;
     glm::vec2 mCornerDown;
     glm::vec2 mDisp;
+
+    //corners
+    cv::Point2f mInputQuad[4];
 
     //crop Mat
     cv::Mat   mCropMat;

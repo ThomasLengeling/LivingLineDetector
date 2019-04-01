@@ -26,7 +26,7 @@ LLL
 class QRDetector;
 typedef std::shared_ptr<QRDetector> QRDetectorRef;
 
-#define QR_4x4_25   0
+#define QR_4x4_50   0
 #define QR_6x6_1000 11
 
 class QRDetector{
@@ -42,7 +42,6 @@ public:
     void detectMarkers(cv::Mat  & inputVideo, bool refiment = true);
 
     cv::Mat getInput(){return mVidCopy;}
-
 
     void toggleMarkerInfo(){mMarkerInfo = !mMarkerInfo;}
 
@@ -63,6 +62,7 @@ public:
 
     //calibration
     bool readDetectorParameters(std::string filename, cv::Ptr< cv::aruco::DetectorParameters> & params);
+    
     bool saveCameraParams(const std::string &filename, cv::Size imageSize,
                          float aspectRatio, int flags,
                          const cv::Mat & cameraMatrix, const cv::Mat & distCoeffs,
