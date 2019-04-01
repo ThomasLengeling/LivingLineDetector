@@ -1,44 +1,96 @@
 ﻿cl : Command line warning D9002: ignoring unknown option '-L/usr/local/lib/'
 cl : Command line warning D9002: ignoring unknown option '-L/usr/local/lib/'
+cl : Command line warning D9002: ignoring unknown option '-L/usr/local/lib/'
+  GridDetector.cpp
+cl : Command line warning D9002: ignoring unknown option '-L/usr/local/lib/'
+  GridImage.cpp
   main.cpp
 cl : Command line warning D9002: ignoring unknown option '-L/usr/local/lib/'
   ofApp.cpp
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguitextinputfield.h(173): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(140): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(141): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguitextinputfield.h(173): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(346): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(140): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(141): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(346): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguitextinputfield.h(173): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(140): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(141): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguitextinputfield.h(173): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(346): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(140): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(141): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(346): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguiscrollview.h(160): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguiscrollview.h(160): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(390): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
-c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(485): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguiscrollview.h(160): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(390): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(485): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguitextinputfield.h(173): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguiscrollview.h(160): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(140): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(141): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(390): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(343): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguislider.h(346): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(485): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(390): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(485): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\gridimage.cpp(43): warning C4996: 'ofVideoGrabber::initGrabber': Use setup instead
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\video\ofvideograbber.h(62): note: see declaration of 'ofVideoGrabber::initGrabber'
+c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\gridimage.cpp(67): warning C4996: 'ofVideoGrabber::initGrabber': Use setup instead
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\video\ofvideograbber.h(62): note: see declaration of 'ofVideoGrabber::initGrabber'
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguiscrollview.h(160): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(390): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxdatgui\src\components\ofxdatguigroups.h(485): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\setup.h(95): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\griddetector.cpp(146): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\ofapp.cpp(40): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
 c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\ofapp.cpp(94): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
 c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\ofapp.cpp(235): warning C4996: 'ofRect': Use ofDrawRectangle instead
   c:\users\thomas\documents\openframeworks_lib\openframeworks\libs\openframeworks\graphics\ofgraphics.h(512): note: see declaration of 'ofRect'
 c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\ofapp.cpp(574): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(166): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(164): note: while compiling class template member function 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)'
+          with
+          [
+              _Ty=GLuint
+          ] (compiling source file src\GridImage.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(322): note: see reference to function template instantiation 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)' being compiled
+          with
+          [
+              _Ty=GLuint
+          ] (compiling source file src\GridImage.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(307): note: see reference to class template instantiation 'ofxCv::Tracker<cv::Rect>' being compiled (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(167): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(166): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
   c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(164): note: while compiling class template member function 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)'
           with
@@ -52,8 +104,25 @@ c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\of
           ] (compiling source file src\main.cpp)
   c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(307): note: see reference to class template instantiation 'ofxCv::Tracker<cv::Rect>' being compiled (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(167): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(200): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(212): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridImage.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(200): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(212): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(166): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(164): note: while compiling class template member function 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)'
+          with
+          [
+              _Ty=GLuint
+          ] (compiling source file src\GridDetector.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(322): note: see reference to function template instantiation 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)' being compiled
+          with
+          [
+              _Ty=GLuint
+          ] (compiling source file src\GridDetector.cpp)
+  c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(307): note: see reference to class template instantiation 'ofxCv::Tracker<cv::Rect>' being compiled (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(167): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(200): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
+c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(212): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\GridDetector.cpp)
 c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(166): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
   c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\ofxcv\include\ofxcv\tracker.h(164): note: while compiling class template member function 'const std::vector<GLuint,std::allocator<_Ty>> &ofxCv::Tracker<cv::Rect>::track(const std::vector<cv::Rect,std::allocator<cv::Rect_<int>>> &)'
           with
@@ -81,17 +150,17 @@ c:\users\thomas\documents\openframeworks_lib\openframeworks\addons\ofxcv\libs\of
   c:\users\thomas\documents\openframeworks_lib\openframeworks\apps\livinglinedetector\app\livinglinedetector\src\ofapp.cpp(133): note: see reference to function template instantiation 'cv::Mat ofxCv::toCv<unsigned char>(ofPixels_<unsigned char> &)' being compiled
      Creating library bin\LivingLineDetector.lib and object bin\LivingLineDetector.exp
   Generating code
-  All 238 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  0 of 238 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   LivingLineDetector.vcxproj -> C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\LivingLineDetector.exe
   
   	                   2	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\libs\fmodex\lib\vs\x64\
   	  *EXTRA File 		 1266176	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\fmodex.dll
-  	    New File  		 1503232	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\libs\fmodex\lib\vs\x64\fmodex64.dll
-  	    New File  		 1552384	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\libs\fmodex\lib\vs\x64\fmodexL64.dll
+  	  *EXTRA File 		 6942208	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\FreeImage.dll
   
   	                   1	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\libs\FreeImage\lib\vs\x64\
   	  *EXTRA File 		 1266176	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\fmodex.dll
   	  *EXTRA File 		 1503232	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\fmodex64.dll
   	  *EXTRA File 		 1552384	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\apps\LivingLineDetector\App\LivingLineDetector\bin\fmodexL64.dll
-  	    New File  		 6942208	C:\Users\thomas\Documents\openFrameworks_lib\openFrameworks\libs\FreeImage\lib\vs\x64\FreeImage.dll
