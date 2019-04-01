@@ -151,6 +151,9 @@ private:
     int mNumOS;
     int mNumPark;
 
+    //movable part of fixed
+    bool mFreePiece;
+
     //radius of detection
     float mRadDetection;
 

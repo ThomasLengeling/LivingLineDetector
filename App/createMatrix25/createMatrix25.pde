@@ -21,7 +21,7 @@ PImage testGrid;
 
 boolean record = false;
 
-int startIndex = 2;
+int startIndex = 0;
 int id =0;
 
 String makerType = "DICT_4X4_50";
@@ -109,7 +109,7 @@ void draw() {
 
   background(255);
 
-  image(testGrid, 0, 0);
+ //image(testGrid, 0, 0);
   
 
 
@@ -120,7 +120,11 @@ void draw() {
 
       float x =  spaceX*i + startX;
       float y =  spaceY*j + startY;
-      image(im, x, y, tamX, tamY);
+      image(im, x, y + spaceY, tamX, tamY);
+      
+      fill(0);
+      textSize(16);
+      text(ids[index], x - 20, y + spaceY);
     }
   }
 
