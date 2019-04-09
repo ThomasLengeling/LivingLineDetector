@@ -152,6 +152,7 @@ private:
     int mNumPark;
 
     //movable part of fixed
+    // Free piece does not take into account
     bool mFreePiece;
 
     //radius of detection

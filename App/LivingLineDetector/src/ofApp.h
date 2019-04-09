@@ -38,8 +38,8 @@ Living Line
 
 #define NUM_CAM_INPUTS 1
 
-#define CAM_WIDTH  640  //1920
-#define CAM_HEIGHT 480 //1080
+#define CAM_WIDTH  1280  //1920
+#define CAM_HEIGHT 720 //1080
 
 #define CAM_FRAMERATE 30 //10
 
@@ -124,6 +124,9 @@ public:
   ofxDatButtonRef mBDebugMarkers;
 
   ofxDatSliderRef mGammaValue;
+  ofxDatSliderRef mAlphaValue;
+  ofxDatSliderRef mBetaValue;
+
   ofxDatMatrixRef mBGridSelect;
   ofxDatButtonRef mBCloseCams;
 

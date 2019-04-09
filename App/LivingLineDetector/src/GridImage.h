@@ -58,7 +58,11 @@ public:
 
     ofPixels  & getImgPixels();
 
+    //gamma, alpha an beta correction
     void setGamma(float gm){mGamma = gm;}
+    void setAlpha(float alpha){mAlpha = alpha;}
+    void setBeta(int beta){mBeta = beta;}
+
     float getGamma(){return mGamma;}
 
     // clean Image
@@ -146,4 +150,7 @@ private:
 
     //img correction
     float mGamma;
+
+    float mAlpha;
+    int  mBeta;
 };

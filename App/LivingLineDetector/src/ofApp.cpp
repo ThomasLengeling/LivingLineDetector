@@ -135,10 +135,14 @@ void ofApp::update() {
       cv::Mat copMat = mGridImg.at(currentId)->getCropMat();
       copMat.copyTo(copyCrop);
 
+      //color correction
       mGridImg.at(currentId)->setGamma(mGammaValue->getValue());
+      mGridImg.at(currentId)->setAlpha(mAlphaValue->getValue());
+      mGridImg.at(currentId)->setBeta(mBetaValue->getValue());
 
       // calculate Gamma
       mGridImg.at(currentId)->adjustGamma(copyCrop);
+
       copyCrop.copyTo(imageCopy);
       // copyCrop.copyTo(vidMat);
     } else {
@@ -435,6 +439,9 @@ void ofApp::offScreenRenderGrid() {
 //--------------------------------------------------------------
 void ofApp::updateGUI() {
   mGammaValue->update();
+  mAlphaValue->update();
+  mBetaValue->update();
+
   mBEnableCrop->update();
   mBEnableVideo->update();
   mBDebugVideoGrid->update();
@@ -459,6 +466,9 @@ void ofApp::updateGUI() {
 //--------------------------------------------------------------
 void ofApp::drawGUI() {
   mGammaValue->draw();
+  mAlphaValue->draw();
+  mBetaValue->draw();
+
   mBEnableCrop->draw();
   mBEnableVideo->draw();
   mBFullCamView->draw();
@@ -492,7 +502,7 @@ void ofApp::saveJSONBlocks() {
       pt[to_string(i)]["type"] = BlockType::knobStatic;
       // writer.push_back(pt);
       i++;
-  
+
   }
   */
 }
