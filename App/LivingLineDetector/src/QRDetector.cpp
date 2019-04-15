@@ -4,13 +4,13 @@ using namespace std;
 using namespace cv;
 
 QRDetector::QRDetector() {
-  mMinFoundId = 1000;
+  mMinFoundId = 50;
   mMaxFoundId = 0;
   mMarkerInfo = false;
 }
 
 void QRDetector::resetMinMax() {
-  mMinFoundId = 1000;
+  mMinFoundId = 50;
   mMaxFoundId = 0;
 }
 
@@ -25,8 +25,8 @@ void QRDetector::setupCalibration(int markersX, int markersY) {
 
   detectorParams = cv::aruco::DetectorParameters::create();
 
-  detectorParams->adaptiveThreshWinSizeMin = 15; //20
-  detectorParams->adaptiveThreshWinSizeMax = 60; //50
+  detectorParams->adaptiveThreshWinSizeMin = 25; //20
+  detectorParams->adaptiveThreshWinSizeMax = 80; //50
   detectorParams->adaptiveThreshWinSizeStep = 5;
 
   detectorParams->perspectiveRemovePixelPerCell = 10; // 10

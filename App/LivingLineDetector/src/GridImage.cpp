@@ -145,13 +145,21 @@ void GridImage::updateGUISwap() {
 //-----------------------------------------------------------------------------
 void GridImage::adjustGamma(cv::Mat &img) {
   if (!img.empty()) {
+
+    cv::Mat imgGamma;
+    img.convertTo(imgGamma, -1, mAlpha, mBeta);
+
     cv::Mat lookUpTable(1, 256, CV_8U);
     unsigned char *p = lookUpTable.ptr();
     for (int i = 0; i < 256; i++) {
       p[i] = saturate_cast<unsigned char>(pow(i / 255.0, mGamma) * 255.0);
     }
-    cv::LUT(img, lookUpTable, img);
+    cv::LUT(imgGamma, lookUpTable, imgGamma);
+
+    imgGamma.copyTo(img);
   }
+
+
 }
 //-----------------------------------------------------------------------------
 void GridImage::resetCrop() {

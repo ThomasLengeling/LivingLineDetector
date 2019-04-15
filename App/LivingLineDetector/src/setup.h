@@ -198,6 +198,7 @@ void ofApp::setupGUI() {
     }
   });
 
+  //gamma
   mGammaValue = ofxDatSlider::create();
   mGammaValue->slider =
       new ofxDatGuiSlider(mGammaValue->ofParam.set("gamma", 0.65, 0, 2));
@@ -206,10 +207,30 @@ void ofApp::setupGUI() {
   mGammaValue->slider->onSliderEvent(
       [&](ofxDatGuiSliderEvent v) { mGammaValue->ofParam = v.value; });
 
+  //alpha
+  mAlphaValue = ofxDatSlider::create();
+  mAlphaValue->slider =
+      new ofxDatGuiSlider(mAlphaValue->ofParam.set("alpha", 0.65, 0, 3));
+  mAlphaValue->slider->setWidth(390, .4);
+  mAlphaValue->slider->setPosition(sliderStartX, 160);
+  mAlphaValue->slider->onSliderEvent(
+      [&](ofxDatGuiSliderEvent v) { mAlphaValue->ofParam = v.value; });
+
+  //beta
+  mBetaValue = ofxDatSlider::create();
+  mBetaValue->slider =
+      new ofxDatGuiSlider(mBetaValue->ofParam.set("beta", 50, 0, 255));
+  mBetaValue->slider->setWidth(390, .4);
+  mBetaValue->slider->setPosition(sliderStartX, 210);
+  mBetaValue->slider->onSliderEvent(
+      [&](ofxDatGuiSliderEvent v) { mBetaValue->ofParam = v.value; });
+
+
+
   mBDebugMarkers = ofxDatButton::create();
   mBDebugMarkers->setActivation(false);
   mBDebugMarkers->button = new ofxDatGuiToggle("Toogle Markers Draw");
-  mBDebugMarkers->button->setPosition(sliderStartX, 160);
+  mBDebugMarkers->button->setPosition(sliderStartX, 260);
   mBDebugMarkers->button->setWidth(390, .4);
   mBDebugMarkers->button->onButtonEvent([&](ofxDatGuiButtonEvent v) {
     for (auto &det : mArucoDetector) {
@@ -222,7 +243,7 @@ void ofApp::setupGUI() {
   mBGridSelect->matrix->setRadioMode(true);
   mBGridSelect->matrix->setOpacity(0.8);
   mBGridSelect->matrix->setWidth(390, .4);
-  mBGridSelect->matrix->setPosition(sliderStartX, 210);
+  mBGridSelect->matrix->setPosition(sliderStartX, 310);
   mBGridSelect->matrix->onMatrixEvent([&](ofxDatGuiMatrixEvent v) {
     mCurrentInputIdx = v.child;
     ofLog(OF_LOG_NOTICE) << "Index: " << mCurrentInputIdx << std::endl;
@@ -235,7 +256,7 @@ void ofApp::setupGUI() {
   mBCloseCams->button = new ofxDatGuiToggle("Close Cams");
   mBCloseCams->button->setOpacity(0.8);
   mBCloseCams->button->setWidth(390, .4);
-  mBCloseCams->button->setPosition(sliderStartX, 260);
+  mBCloseCams->button->setPosition(sliderStartX, 360);
   mBCloseCams->button->onButtonEvent([&](ofxDatGuiButtonEvent v) {
     for (auto &gridImage : mGridImg) {
       gridImage->getCam().close();
@@ -245,7 +266,7 @@ void ofApp::setupGUI() {
 
   int i = 0;
   for (auto &gridImage : mGridImg) {
-    gridImage->setupGUISwap(sliderStartX, 290 + 30 * i);
+    gridImage->setupGUISwap(sliderStartX, 390 + 30 * i);
     i++;
   }
 
@@ -271,6 +292,7 @@ void ofApp::setupCalibration() {
 
   ofLog(OF_LOG_NOTICE) << "done setup calibration";
 }
+
 //-----------------------------------------------------------------------------
 void ofApp::setupCam() {
 
@@ -335,6 +357,7 @@ void ofApp::setupCam() {
 
   ofLog(OF_LOG_NOTICE) << "done setup video";
 }
+
 //-----------------------------------------------------------------------------
 void ofApp::setupVideo(){
 
@@ -352,6 +375,7 @@ void ofApp::setupVideo(){
   ofLog(OF_LOG_NOTICE) << "Done loading video";
 
 }
+
 //-----------------------------------------------------------------------------
 void ofApp::setupGridDetector() {
 
